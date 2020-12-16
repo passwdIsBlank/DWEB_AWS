@@ -1,7 +1,7 @@
-#¿Que es EC2?
+# ¿Que es EC2?
 Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual adaptable a un usuario de forma que este se adapte a las necesidades del usuario
 
-#Apache y PHP
+# Apache y PHP
 
 1. ``sudo apt install apache2 php libapache2-mod-php php7.4-fpm``
 2. ``sudo vim /etc/php/7.4/apache2/php.ini`` y editamos lo siguiente:
@@ -21,14 +21,14 @@ Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual ad
     ![Habilitar trafico HTTP en la instancia paso 2](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/HTTP_enable_2.PNG)
     Comprobamos mediante el navegador (De momento usamos la IP pública del server:
     ![Comprobación por medio del navegador](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/HTTP_test.PNG)
-#MYSQL
+# MYSQL
 
 1. ``sudo apt install mysql-server``
 2. ``sudo mysql_secure_installation``
     - En mi caso solo desactive la 1ra opción de comprobación de la seguridad de la clave, el resto yes
 3. Estado del servicio:
 ![Estado de servicio de MySQL](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/status_MYSQL.PNG)
-#FTP
+# FTP
 
 1. ``sudo apt install vsftpd``
 2. ``sudo vim /etc/vsftpd.conf`` y editamos (por el momento anonymous_enable estará activado tambien)
@@ -42,9 +42,9 @@ Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual ad
    Comprobamos mediante CMD (De momento usamos la IP pública del server):
    ![Comprobación mediante CMD](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/FTP_test.PNG)
    
-#IP Elástica
+# IP Elástica
 
-##¿Qué es y para qué sirve una IP Elástica?
+## ¿Qué es y para qué sirve una IP Elástica?
 En esencia es lo mismo que una IP estática solo que optimizada para la informática en la nube dinámica.
 
 ##Configuración de una IP Elástica
@@ -59,12 +59,12 @@ En esencia es lo mismo que una IP estática solo que optimizada para la informá
 5. Comprobamos mediante el navegador (Usamos la IP elástica en vez de la IP pública del server):
 ![Comprobación mediante navegador](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_test.PNG)
 
-#DNS
+# DNS
 
-##¿Que es y para que sirve el DNS?
+## ¿Que es y para que sirve el DNS?
 DNS significa Domain Name System, es un protocolo creado para asociar diferentes dispositivos en redes IP a nombres, hay bastantes tipos de registros utilizados y consta de una zona directa e inversa cuyas funciones generales respectivamente son resolución Nombre => IP e IP => Nombre.
 
-##Tipos de registros
+## Tipos de registros
 Estos son algunos de los registros disponibles:
 -  A: Este hace referencia a la dirección IPv4 de un servidor web y es el más típico de encontrarnos en los servidores DNS.
 - AAAA: Este hace referencia a la dirección IPv6 de un host. Es igual que el registro “A”, pero refiriéndose a una dirección IPv6 y no IPv4.
@@ -76,7 +76,7 @@ Estos son algunos de los registros disponibles:
 - SRV: Este hace referencia a un servicio. Es decir, se utiliza para la definición de un servicio TCP en el que opere en el dominio.
 - TXT: Este hace referencia a un texto. Es decir, permite que los administradores inserten texto en el registro DNS. Esto se utiliza para dejar notas sobre información del dominio.
 
-##DNS del CPanel de Guebs
+## DNS del CPanel de Guebs
 ![Primeros tres registros del CPanel de Guebs](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/cpanel_DNS_records.PNG)
 - El primer registro es tipo A y asocia el nombre grupo1.zerbitzaria.net a la IP 54.76.1.76
 - El segundo registro es tipo MX y nos dice donde está el servidor de mail del nombre grupo1.zerbitzaria.net
