@@ -9,25 +9,25 @@ Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual ad
     - ``sudo systemctl restart apache2`` Reiniciamos el servicio de apache.
 3. Estado de los servicios:
     - Apache
-    ![Estado de servicio de Apache](images/status_APACHE.PNG)
+    ![Estado de servicio de Apache](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/status_APACHE.PNG)
     - PHP
-    ![Estado de servicio de PHP](images/status_PHP.PNG)
+    ![Estado de servicio de PHP](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/status_PHP.PNG)
 4. Podemos pasar a comprobar que el servidor funciona correctamente, para ello en AWS debemos añadir una regla para habilitar el tráfico al puerto 80 para nuestra instancia.
     - En el navegador vamos a AWS y clickamos en la instancia de Ubuntu 20.04
     - En la segunda sección vamos a la pestaña de 'Seguridad'
     - Una vez en la pestaña cickamos en el grupo de seguridad en cuestión y vamos a 'Editar reglas de entrada'
-    ![Habilitar trafico HTTP en la instancia paso 1](images/HTTP_enable_1.PNG)
+    ![Habilitar trafico HTTP en la instancia paso 1](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/HTTP_enable_1.PNG)
     - Añadimos una nueva regla para el protocolo HTTP y desde cualquier IP 0.0.0.0/0, una vez hecho guardamos los cambios
-    ![Habilitar trafico HTTP en la instancia paso 2](images/HTTP_enable_2.PNG)
+    ![Habilitar trafico HTTP en la instancia paso 2](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/HTTP_enable_2.PNG)
     Comprobamos mediante el navegador (De momento usamos la IP pública del server:
-    ![Comprobación por medio del navegador](images/HTTP_test.PNG)
+    ![Comprobación por medio del navegador](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/HTTP_test.PNG)
 #MYSQL
 
 1. ``sudo apt install mysql-server``
 2. ``sudo mysql_secure_installation``
     - En mi caso solo desactive la 1ra opción de comprobación de la seguridad de la clave, el resto yes
 3. Estado del servicio:
-![Estado de servicio de MySQL](images/status_MYSQL.PNG)
+![Estado de servicio de MySQL](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/status_MYSQL.PNG)
 #FTP
 
 1. ``sudo apt install vsftpd``
@@ -36,11 +36,11 @@ Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual ad
     - ``local_enable=YES`` esta opción permite logearse con usuarios locales
 3. ``sudo systemctl restart vsftpd`` y reiniciamos el servicio
 4. Estado del servicio:
-![Estado de servicio de FTP](images/status_FTP.PNG)
+![Estado de servicio de FTP](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/status_FTP.PNG)
 4. Igual que con Apache debemos habilitar el tráfico al puerto 21 para que podamos acceder por medio de FTP, seguir paso 3 de Apache cambiando los datos de la regla
-   ![Habilitar trafico FTP en la instancia](images/FTP_enable_1.PNG)
+   ![Habilitar trafico FTP en la instancia](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/FTP_enable_1.PNG)
    Comprobamos mediante CMD (De momento usamos la IP pública del server):
-   ![Comprobación mediante CMD](images/FTP_test.PNG)
+   ![Comprobación mediante CMD](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/FTP_test.PNG)
    
 #IP Elástica
 
@@ -49,15 +49,15 @@ En esencia es lo mismo que una IP estática solo que optimizada para la informá
 
 ##Configuración de una IP Elástica
 1. En el navegador vamos a AWS y clickamos en la pestaña de 'Direcciones IP elásticas' en 'Red y Seguridad', aquí clickaremos sobre 'Asignar la dirección IP elástica'
-![Crear IP Elástica 1](images/Elastic_IP_1.PNG)
+![Crear IP Elástica 1](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_1.PNG)
 2. En este paso no modificamos nada
-![Crear IP Elástica 2](images/Elastic_IP_2.PNG)
+![Crear IP Elástica 2](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_2.PNG)
 3. Clickamos sobre 'Asociar esta dirección IP elástica'
-![Asignar IP Elástica a instancia 1](images/Elastic_IP_3.PNG)
+![Asignar IP Elástica a instancia 1](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_3.PNG)
 4. Seleccionamos la instancia y a que IP privada estará asociada nuestra IP elástica
-![Asignar IP Elástica a instancia 2](images/Elastic_IP_4.PNG)
+![Asignar IP Elástica a instancia 2](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_4.PNG)
 5. Comprobamos mediante el navegador (Usamos la IP elástica en vez de la IP pública del server):
-![Comprobación mediante navegador](images/Elastic_IP_test.PNG)
+![Comprobación mediante navegador](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_test.PNG)
 
 #DNS
 
@@ -77,7 +77,7 @@ Estos son algunos de los registros disponibles:
 - TXT: Este hace referencia a un texto. Es decir, permite que los administradores inserten texto en el registro DNS. Esto se utiliza para dejar notas sobre información del dominio.
 
 ##DNS del CPanel de Guebs
-![Primeros tres registros del CPanel de Guebs](images/cpanel_DNS_records.PNG)
+![Primeros tres registros del CPanel de Guebs](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/cpanel_DNS_records.PNG)
 - El primer registro es tipo A y asocia el nombre grupo1.zerbitzaria.net a la IP 54.76.1.76
 - El segundo registro es tipo MX y nos dice donde está el servidor de mail del nombre grupo1.zerbitzaria.net
 - El tercer registro es tipo TXT y es una cadena de carácteres
