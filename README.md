@@ -102,3 +102,6 @@ El servidor al que tu ordenador mandará la petición reenviará dicha petición
 
 ## ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios DNS, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma.
 Es posible con un DDNS, Dynamic Domain Name System los cuales son efectivos a la hora de reflejar los cambios a tu IP dinámica.
+
+## ¿Qué es ICANN?
+ICANN es una organización que opera a nivel multinacional/internacional y es la responsable de asignar las direcciones del protocolo IP, de los identificadores de protocolo, de las funciones de gestión del sistema de dominio y de la administración del sistema de servidores raíz.
