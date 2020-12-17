@@ -1,5 +1,8 @@
 # ¿Que es EC2?
-Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual adaptable a un usuario de forma que este se adapte a las necesidades del usuario
+Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual adaptable a un usuario de forma que este se adapte a las necesidades del usuario.
+
+## Instancia de Ubuntu 20.04
+![Resumen de la instancia creada](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/instance.PNG)
 
 # Apache y PHP
 
@@ -47,7 +50,7 @@ Elastic Compute Cloud se refiere a proveer un servicio de computadora virtual ad
 ## ¿Qué es y para qué sirve una IP Elástica?
 En esencia es lo mismo que una IP estática solo que optimizada para la informática en la nube dinámica.
 
-##Configuración de una IP Elástica
+## Configuración de una IP Elástica
 1. En el navegador vamos a AWS y clickamos en la pestaña de 'Direcciones IP elásticas' en 'Red y Seguridad', aquí clickaremos sobre 'Asignar la dirección IP elástica'
 ![Crear IP Elástica 1](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/Elastic_IP_1.PNG)
 2. En este paso no modificamos nada
@@ -64,7 +67,7 @@ En esencia es lo mismo que una IP estática solo que optimizada para la informá
 ## ¿Que es y para que sirve el DNS?
 DNS significa Domain Name System, es un protocolo creado para asociar diferentes dispositivos en redes IP a nombres, hay bastantes tipos de registros utilizados y consta de una zona directa e inversa cuyas funciones generales respectivamente son resolución Nombre => IP e IP => Nombre.
 
-## Tipos de registros
+##Tipos de registros
 Estos son algunos de los registros disponibles:
 -  A: Este hace referencia a la dirección IPv4 de un servidor web y es el más típico de encontrarnos en los servidores DNS.
 - AAAA: Este hace referencia a la dirección IPv6 de un host. Es igual que el registro “A”, pero refiriéndose a una dirección IPv6 y no IPv4.
@@ -81,3 +84,21 @@ Estos son algunos de los registros disponibles:
 - El primer registro es tipo A y asocia el nombre grupo1.zerbitzaria.net a la IP 54.76.1.76
 - El segundo registro es tipo MX y nos dice donde está el servidor de mail del nombre grupo1.zerbitzaria.net
 - El tercer registro es tipo TXT y es una cadena de carácteres
+
+## ¿Cuantos servidores DNS existen?
+Hay 13 servidores raíz y los que haya creado la gente.
+
+## ¿Cuántas redirecciones DNS son posibles?
+Hasta que se pregunte al root server o el root server responda que no sabe donde está.
+
+## ¿Qué son los servidores DNS Raíz?
+Son los que están más arriba en la jerarquía y contienen la información sobre quien puede poseer la información solicitada
+
+## ¿Para qué montar un servidor si simplemente escribiendo en un fichero la relación IP/Nombre el sistema ya funcionaría?
+Bueno, pues para no tener que repetir el mismo proceso en cada ordenador que haya en la red, esto automatizaría el proceso al preguntarle al servidor DNS.
+
+## Según lo expuesto, y si en tu configuración de red del sistema operativo solamente posees un servidor DNS, entonces: ¿cuál sería el proceso para encontrar la IP de la dirección web: http://www.debian.org/distrib/netinst?
+El servidor al que tu ordenador mandará la petición reenviará dicha petición a el siguiente servidor DNS y así sucesivamente hasta que se encuentre la dirección o hasta que un root server responda que no posee la información.
+
+## ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios DNS, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma.
+Es posible con un DDNS, Dynamic Domain Name System los cuales son efectivos a la hora de reflejar los cambios a tu IP dinámica.
