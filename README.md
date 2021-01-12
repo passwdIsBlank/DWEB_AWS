@@ -105,3 +105,41 @@ Es posible con un DDNS, Dynamic Domain Name System los cuales son efectivos a la
 
 ## ¿Qué es ICANN?
 ICANN es una organización que opera a nivel multinacional/internacional y es la responsable de asignar las direcciones del protocolo IP, de los identificadores de protocolo, de las funciones de gestión del sistema de dominio y de la administración del sistema de servidores raíz.
+
+# CRON
+
+# ¿Qué es Cron?
+Es un administrador de procesos en segundo plano que se ejecuta cuando arranca el sistema.
+
+# ¿Qué es Crontab?
+Es un archivo de texto que contiene la lista de comandos que se deben ejecutar. Crontab verificará la fecha y hora en que se debe ejecutar el script o comando, los permisos de ejecución y lo ejecutará en segundo plano.
+
+# Ejemplos
+
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_1.PNG)
+Cada y media se ejecuta
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_2.PNG)
+A las 20.30 h se ejecuta
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_3.PNG)
+A las 20.30 de Lunes a Viernes se ejecuta
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_4.PNG)
+A las 20.30 los Martes y Jueves
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_5.PNG)
+A las 20.30 h los días 10 y 20 de cada mes
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_6.PNG)
+Cada 15 min se ejecuta
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_7.PNG)
+Se ejecuta diariamente
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_8.PNG)
+Se ejecuta mensualmente * @monthly
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_9.PNG)
+A las 20.30 h de Lunes a Viernes
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/6_10.PNG)
+A las 00.01 los días del 1 al 7 de cada mes
+
+
+# Ejercicio 7
+
+1. Ejecutamos ``crontab -e`` y seleccionamos nuestro editor preferido
+2. Al final del archivo añadimos una línea especificando cuando queremos que se ejecute él o los comandos
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/7_1.PNG)
