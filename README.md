@@ -143,3 +143,11 @@ A las 00.01 los días del 1 al 7 de cada mes
 1. Ejecutamos ``crontab -e`` y seleccionamos nuestro editor preferido
 2. Al final del archivo añadimos una línea especificando cuando queremos que se ejecute él o los comandos
 ![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/7_1.PNG)
+
+# Ejercicio 8
+
+1. Comprueba si los módulos info y status están activos en tu instancia.
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/8_1.PNG)
+2. Activa el módulo que no esté activo y compruébalo.
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/8_2.PNG)
+![](https://raw.githubusercontent.com/passwdIsBlank/DWEB_AWS/main/images/8_3.PNG)
